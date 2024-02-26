@@ -5,3 +5,5 @@ function scrollOnHeader(){
 }
 
 window.addEventListener('scroll', scrollOnHeader)
+
+var controller = new ScrollMagic.Controller();

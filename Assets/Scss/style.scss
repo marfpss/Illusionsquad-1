@@ -24,7 +24,6 @@ header {
     position: fixed;
     transition: height .3s ease-in-out;
     transition: background .3s ease-in-out;
-    background: #090a0c9f;
 
     .logo { 
         display: grid;
@@ -38,7 +37,7 @@ header {
     }
 
     .links {
-        width: 40%;
+        width: 30%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -81,10 +80,10 @@ main {
         width: 100%;
         height: 80vh;
         overflow: hidden;
-
-        img {
-            width: 100%;
-        }
+        background: url(../Imgs/banner_illusion.png) center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom: 1px solid $primary;
     }
 
     .main-div2 {
@@ -301,6 +300,18 @@ main {
             place-items: center;
         }
     }
+}
+
+footer {
+    width: 100%;
+    height: 15vh;
+    background: #000000fb;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
 }
 
 // extilizações globais 

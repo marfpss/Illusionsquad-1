@@ -285,12 +285,18 @@ footer {
   width: 100%;
   height: 15vh;
   background: rgba(0, 0, 0, 0.9843137255);
-  color: #fff;
+  color: var(--text-subdued);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1vh;
+}
+
+footer h4:hover ,
+footer h5:hover  
+{
+ color: var(--text-base); 
 }
 
 ::selection {

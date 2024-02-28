@@ -45,7 +45,7 @@ header .links a::after {
   transition: 0.3s ease-in-out;
 }
 header .links a:hover {
-  color: #703db3;
+  color: #ffffff;
 }
 header .links a:hover::after {
   width: 100%;
@@ -83,13 +83,19 @@ main .main-div2 .main-div2-div1 {
   gap: 1vh;
 }
 main .main-div2 .main-div2-div1 h2 {
-  color: #703db3;
+  color: var(--text-base);
   font-size: 28pt;
   font-weight: 900;
 }
 main .main-div2 .main-div2-div1 p {
-  color: #fff;
+  color: var(--text-subdued);
+  font-weight: 400;
 }
+
+main .main-div2 .main-div2-div1 p:hover{
+  color: var(--text-base);
+}
+
 main .main-div2 .main-div2-div2 {
   width: 50%;
   height: 100%;
@@ -99,18 +105,21 @@ main .main-div2 .main-div2-div2 {
 main .main-div3 {
   width: 100%;
   height: 30vh;
-  background: #090a0c;
-  color: #703db3;
+  color: var(--text-subdued);
   display: grid;
   place-items: center;
   text-align: center;
 }
 main .main-div3 h1 {
-  text-shadow: 0 0 12px rgba(112, 61, 179, 0.3137254902), 0 0 50px rgba(112, 61, 179, 0.3137254902), 0 0 100px rgba(112, 61, 179, 0.3137254902);
   font-size: 2rem;
   font-weight: 100;
   font-family: "Roboto", sans-serif;
 }
+
+main .main-div3 h1:hover {
+  color: var(--text-base);
+}
+
 main .main-div4 {
   background: #090a0c;
   width: 100%;
@@ -122,7 +131,7 @@ main .main-div4 .main-div4-div1 {
   height: 15vh;
   display: grid;
   place-items: center;
-  color: #fff;
+  color: var(--text-base);
 }
 main .main-div4 .main-div4-div2 {
   display: flex;
@@ -154,33 +163,51 @@ main .main-div4 .main-div4-div2 .card-curso .text {
   padding: 0 1vh 0 1vh;
 }
 main .main-div4 .main-div4-div2 .card-curso .text #title {
+  margin-top: 1rem;
   font-size: 11pt;
   padding: 5px 0 5px 0;
 }
 main .main-div4 .main-div4-div2 .card-curso .text #teacher {
   padding-bottom: 5px;
+  color: var(--text-subdued);
+  font-weight: 300;
 }
 main .main-div4 .main-div4-div2 .card-curso .text #ass {
   padding-bottom: 5px;
+  color: var(--text-subdued);
+  font-weight: 300;
 }
 main .main-div4 .main-div4-div2 .card-curso .text #price {
   padding-bottom: 5px;
+  color: var(--text-subdued);
+  font-weight: 300;
 }
 main .main-div4 .main-div4-div2 .card-curso .text #fc {
   font-size: 10pt;
+  color: var(--text-subdued);
 }
+
+main .main-div4 .main-div4-div2 .card-curso .text #teacher:hover ,
+main .main-div4 .main-div4-div2 .card-curso .text #ass:hover ,
+main .main-div4 .main-div4-div2 .card-curso .text #price:hover ,
+main .main-div4 .main-div4-div2 .card-curso .text #fc:hover {
+  color: var(--text-base);
+}
+
 main .main-div4 .main-div4-div2 .card-curso .text .carrinho {
   width: 100%;
-  height: 7vh;
+  height: 6vh;
   display: flex;
   align-items: center;
   justify-content: right;
+  margin-right: 0.5rem;
 }
 main .main-div4 .main-div4-div2 .card-curso .text .carrinho a div {
   width: 32px;
   height: 32px;
   display: grid;
   place-items: center;
+  margin-right: 0.5rem;
 }
 main .main-div5 {
   width: 100%;
@@ -227,8 +254,15 @@ main .main-div5 .cards .card .head img {
 }
 main .main-div5 .cards .card .body {
   padding: 2vh 0 2vh 0;
-  text-align: justify;
+  text-align: normal;
+  font-weight: 300;
+  color: var(--text-subdued);
 }
+
+main .main-div5 .cards .card .body:hover  {
+  color: var(--text-base);
+}
+
 main .main-div6 {
   width: 100%;
   height: 60vh;
@@ -284,4 +318,3 @@ footer {
   width: 75px;
 }
 
-/*# sourceMappingURL=style.css.map */

@@ -12,4 +12,5 @@
     text-decoration: none;
     overflow-x: hidden;
     overflow-y: auto;
+    transition: all 1s ease-in-out;
 }

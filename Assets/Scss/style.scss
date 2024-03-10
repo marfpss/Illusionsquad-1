@@ -331,3 +331,90 @@ footer {
         width: 75px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    header {
+        height: 10vh;
+        padding: 0 3vh 0 3vh;
+
+        .logo {
+            width: 30%;
+        }
+
+        .links {
+            width: 50%;
+            font-size: 0.8em;
+
+            a {
+                padding: 0.5em;
+            }
+        }
+    }
+
+    main {
+
+        .main-div1,
+        .main-div2,
+        .main-div3,
+        .main-div4,
+        .main-div5,
+        .main-div6 {
+            height: auto;
+        }
+
+        .main-div2 {
+            .main-div2-div1 {
+                padding: 5vh;
+            }
+
+            .main-div2-div2 {
+                display: none;
+            }
+        }
+
+        .main-div4 {
+            padding: 3vh;
+
+            .main-div4-div2 {
+                .card-curso {
+                    width: 100%;
+                    margin-bottom: 3vh;
+                }
+            }
+        }
+
+        .main-div5 {
+            .title {
+                height: auto;
+            }
+
+            .cards {
+                padding: 1vh;
+
+                .card {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 3vh;
+                }
+            }
+        }
+
+        .main-div6 {
+
+            .programmer,
+            .cyber {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    footer {
+        height: 12vh;
+        gap: 0.5vh;
+    }
+
+    ::selection {
+        background-color: $selection;
+    }
+}

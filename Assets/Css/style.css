@@ -324,3 +324,103 @@ footer h5:hover
   width: 75px;
 }
 
+@media only screen and (max-width: 768px) {
+  header {
+    height: 10vh;
+    padding: 0 3vh;
+
+    .logo {
+      width: 30%;
+    }
+
+    .links {
+      width: 50%;
+      font-size: 0.8em;
+
+      a {
+        padding: 0.5em;
+      }
+    }
+  }
+
+  main .main-div2 {
+    flex-direction: column;
+
+    .main-div2-div1 {
+      width: 100%;
+      padding: 5vh;
+    }
+
+    .main-div2-div2 {
+      width: 100%;
+      display: none;
+    }
+  }
+
+  main .main-div4 {
+    padding: 3vh 5vh;
+
+    .main-div4-div2 {
+      .card-curso {
+        width: 100%;
+        margin-bottom: 3vh;
+      }
+    }
+  }
+
+  main .main-div5 {
+    .title {
+      height: auto;
+    }
+
+    .cards {
+      padding: 1vh 5vh 3vh 5vh;
+
+      .card {
+        width: 100%;
+        height: auto;
+        margin-bottom: 3vh;
+      }
+    }
+  }
+
+  main .main-div6 {
+    flex-direction: column;
+
+    .programmer,
+    .cyber {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  footer {
+    height: 12vh;
+    gap: 0.5vh;
+  }
+
+  ::selection {
+    background-color: rgba(112, 61, 179, 0.3137254902);
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    background-color: #090a0c;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #703db3;
+    border: 0px;
+    border-radius: 3px;
+  }
+
+  footer h4:hover,
+  footer h5:hover {
+    color: var(--text-base);
+  }
+
+  .ativo {
+    height: 12vh;
+    background: rgba(9, 10, 12, 0.9176470588);
+  }
+}

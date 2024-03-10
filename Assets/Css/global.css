@@ -10,4 +10,6 @@
     font-family: "Roboto", sans-serif;
     font-style: normal;
     text-decoration: none;
+    overflow-x: hidden;
+    overflow-y: auto;
 }

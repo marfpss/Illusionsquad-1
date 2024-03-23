@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(./root.css);
+@import url(./header.css);
+@import url(./animation.css);
+@import url(./main.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,html {
+    font-family: Roboto, sans-serif;
+    background: var(--background-degrade);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+    min-height: 100vh;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--houver) var(--background-elevated-base);
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+*::-webkit-scrollbar-track {
+    background: var(--background-elevated-base);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--houver);
+    border-radius: 20px;
+    border: 1px solid var(--background-elevated-base);
+}
+
+@media screen and (max-width: 768px) {
+    *::-webkit-scrollbar {
+        width: 3px;
+    }
+}

@@ -1,0 +1,162 @@
+@keyframes animation-img {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateY(-8px);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateY(8px);
+    }
+
+    80% {
+        transform: translateY(6.4px);
+    }
+
+    90% {
+        transform: translateY(-6.4px);
+    }
+}
+
+@keyframes introduction {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.effect-rgb-animation {
+    transition: color 0.3s;
+}
+
+.effect-rgb-animation:hover {
+    animation: rgb-animation 5s infinite;
+}
+
+@keyframes rgb-animation {
+    0% {
+        color: var(--effect-color-red);
+    }
+
+    25% {
+        color: var(--effect-color-yellow);
+    }
+
+    50% {
+        color: var(--effect-color-blue);
+    }
+
+    70% {
+        color: var(--effect-color-green);
+    }
+
+    100% {
+        color: var(--effect-color-red);
+    }
+}
+
+@keyframes snow-animation {
+    0% {
+        transform: translateY(0vh);
+    }
+
+    25% {
+        transform: translateY(25vh);
+    }
+
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+.snow-effect {
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--text-base);
+    border-radius: 50%;
+    animation: snow-animation 10s linear infinite;
+}
+
+.snowflake:nth-child(1) {
+    left: 10vh;
+    overflow: hidden;
+    animation-delay: 0s;
+}
+
+.snowflake:nth-child(2) {
+    left: 20vh;
+    overflow: hidden;
+    animation-delay: 1s;
+}
+
+.snowflake:nth-child(3) {
+    left: 30vh;
+    overflow: hidden;
+    animation-delay: 3s;
+}
+
+.snowflake:nth-child(4) {
+    left: 40vh;
+    overflow: hidden;
+    animation-delay: 4s;
+}
+
+.snowflake:nth-child(5) {
+    left: 50vh;
+    overflow: hidden;
+    animation-delay: 6s;
+}
+
+.snowflake:nth-child(6) {
+    left: 60vh;
+    overflow: hidden;
+    animation-delay: 4s;
+}
+
+.snowflake:nth-child(7) {
+    left: 70vh;
+    overflow: hidden;
+    animation-delay: 2s;
+}
+
+.snowflake:nth-child(8) {
+    left: 80vh;
+    overflow: hidden;
+    animation-delay: 3s;
+}
+
+.snowflake:nth-child(9) {
+    left: 90vh;
+    animation-delay: 0s;
+}
+
+.snowflake:nth-child(10) {
+    left: 100vh;
+    animation-delay: 1s;
+}
+
+@media (max-width: 768px) {
+    .snow-effect {
+        display: none;
+    }
+}

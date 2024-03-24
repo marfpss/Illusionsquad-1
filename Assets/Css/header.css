@@ -97,8 +97,8 @@
 @media screen and (max-width: 768px) {
 
     .header__logo img {
-        width: 30px;
-        height: 30px;
+        width: 24px;
+        height: 24px;
     }
 
     .header__menu {

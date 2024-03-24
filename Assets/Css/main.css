@@ -134,7 +134,7 @@
     }
 
     .main-title {
-        font-size: 20px;
+        font-size: 12px;
         margin-bottom: 10px;
         text-align: center;
     }
@@ -145,7 +145,7 @@
     }
 
     .main-description {
-        font-size: 1rem;
+        font-size: 0.6rem;
         margin-bottom: 10px;
     }
 
